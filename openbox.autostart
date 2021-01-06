@@ -1,0 +1,10 @@
+# Start webserver and firefox for MagicMirror
+xset s off
+xset s noblank
+xset -dpms
+
+python3 /var/www/app/app.py production &
+
+sleep 5
+
+firefox --kiosk 'localhost:8080/' &

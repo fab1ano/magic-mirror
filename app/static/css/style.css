@@ -1,0 +1,108 @@
+body {
+	background-color: #000;
+	font-family: Verdana, Arial, Geneva, Arial Black;
+	color: #FFF
+}
+
+#container {
+	padding: 50px;
+}
+
+#content {
+	padding: 40px 0px 0px 0px;
+}
+
+/* Clock */
+
+#date {
+	padding: 0px 0px 0px 0px;
+	font-size: 33px;
+}
+
+#time {
+	padding: 35px 0px 0px 0px;
+	font-size: 100px;
+}
+
+#clock {
+	float: left;
+}
+
+/* Weather */
+
+#weather {
+	float: right;
+}
+
+#fourDays {
+	text-align: center;
+	font-size: 23px;
+	width: 600px;
+	border-collapse: collapse;
+}
+#date td{
+	color: #AAA;
+	font-size: 12px;
+}
+#day {
+	height: 40px;
+	vertical-align: top;
+}
+#day td{
+	width: 25%;
+}
+#maxtemp .pre {
+	color: #AAA;
+	font-size: 12px;
+	vertical-align: bottom;
+}
+#mintemp .pre {
+	color: #AAA;
+	font-size: 12px;
+	vertical-align: top;
+}
+#morning {
+	height: 90px;
+	vertical-align: bottom;
+}
+#afternoon {
+	height: 70px;
+}
+#evening {
+	height: 90px;
+	vertical-align: top;
+}
+#morning .post, #afternoon .post, #evening .post {
+	color: #AAA;
+	font-size: 12px;
+	display: block;
+	margin-top: 2px;
+	margin-bottom: 10px;
+}
+.data img {
+	width: 75px;
+	height: 50px;
+	object-fit: cover;
+}
+#sun, #rain {
+	vertical-align: bottom;
+	font-size: 16px;
+	height: 30px;
+}
+.pre img {
+	filter: invert(1);
+	vertical-align: middle;
+	padding-right: 6px;
+}
+
+/* Greeting */
+
+#greeting {
+	clear: both;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 50px;
+	text-align: center;
+}

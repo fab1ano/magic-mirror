@@ -1,0 +1,46 @@
+{% macro span_pre(value) %}<span class="pre">{% if value.endswith('png') %}<img src={{ value }}>{% else %}{{ value }}{% endif %}</span>{% endmacro %}
+{% macro span_data(value) %}<span class="data">{% if value.startswith('http') %}<img src={{ value }}>{% else %}{{ value }}{% endif %}</span>{% endmacro %}
+{% macro span_post(value) %}<span class="post">{{ value }}</span>{% endmacro %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mirror</title>
+		<link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="content">
+
+				<div id="clock">
+					<div id="date"></div>
+					<div id="day"></div>
+					<div id="time"></div>
+				</div>
+
+				<div id="weather">
+					<table BORDER=1 RULES=COLS FRAME=VOID BORDERCOLOR=WHITE id="fourDays">
+						<tbody>
+							{% for row in weather_data %}
+							<tr id={{ row.id }}>
+								{% for value in row.content %}
+								<td>{{ span_pre(row.pre) }}{{ span_data(value) }}{{ span_post(row.post) }}</td>
+								{% endfor %}
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+
+			<div id="greeting">{{ greet }}</div>
+		</div>
+
+		<script src="static/js/clock.js"></script>
+		<script src="static/js/reload.js"></script>
+
+	</body>
+</html>
+
