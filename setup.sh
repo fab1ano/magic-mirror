@@ -2,7 +2,7 @@
 
 set -e
 
-sudo apt install --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox python3-pip firefox-esr xdotool
+sudo apt install --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox python3-pip chromium-browser xdotool
 
 pip3 install -r requirements.txt
 

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-DISPLAY=:0 xdotool search --sync --onlyvisible --class "Firefox" windowactivate key F5
+DISPLAY=:0 xdotool search --sync --onlyvisible --class "Chromium" windowactivate key F5

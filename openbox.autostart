@@ -1,4 +1,4 @@
-# Start webserver and firefox for MagicMirror
+# Start webserver and Chromium for MagicMirror
 xset s off
 xset s noblank
 xset -dpms
@@ -7,4 +7,4 @@ python3 /var/www/app/app.py production &
 
 sleep 5
 
-firefox --kiosk 'localhost:8080/' &
+chromium-browser 'http://localhost:8080/' --start-fullscreen --kiosk --incognito --noerrdialogs --disable-translate --no-first-run --fast --fast-start --disable-infobars --disable-features=TranslateUI --disk-cache-dir=/dev/null --password-store=basic &
