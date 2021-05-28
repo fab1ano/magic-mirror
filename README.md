@@ -31,7 +31,7 @@ And add these lines to `/etc/crontab`:
 55 4    * * * pi /home/pi/.reload.sh
 ```
 
-Probably you want to adjust the times for enabling and disabling the monitor.
+Probably you want to adjust the times for turning the monitor on and off.
 
 ## Impression
 
