@@ -36,6 +36,6 @@ Probably you want to adjust the times for turning the monitor on and off.
 ## Impression
 
 Here is a sample image of my mirror that I assembled a while ago.
-It is mainly inspired by Dylan Pierce's [MirrorMirror](http://blog.dylanjpierce.com/raspberrypi/magicmirror/tutorial/2015/12/27/build-a-magic-mirror.html) project.
+It is mainly inspired by Dylan Pierce's [MirrorMirror](https://metro.co.uk/2015/12/30/tech-genius-builds-magic-mirror-for-girlfriend-which-compliments-her-and-gives-weather-updates-5591422/) project.
 
 <img src="imgs/mirror.jpg" width="250"/>
